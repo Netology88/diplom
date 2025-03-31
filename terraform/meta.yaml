@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: ubuntu
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCFM/fG1yIYI6fEt52vISQqY0iPqFn2Y0qt9MDP1eSZs9BzGkfu0jIa7H4lJUxkuF1zQmDJ8pTrfBqeZI/4NMkgEvdTL7UZqGEXaL/g9sUokW6p1mfEf+8xeCP2eznUQRM1kHMb8ta27HUVk3yxj1OgZ1XBB26n3lR6dQTyhNnuMeqzHdW7Ucacc3++UEagUfvn2A3mPTQmU1UGE9ytglXNKr0ND49w6BP9UR2nstG4z+QuUIcKCQHtnv08RDxXdlqODJsRQhuUhA38wLV01IuGnCebJjJjQxja4U6poUzYpCQ9HQi4yEzNXiircdJfaclyYKW1KImx5rpvfHRYC+1ZCCB6xQKROhJfSnEfO420tSLK0aI/IkfpFEnTZJL2ElxTAEsZu0RC/bC89XMJlX48erZe7yzQK9xtTlW4mAMftA/kleJLKt4mP8tAEsnNL4lx/nOHaX2R8z/ALbX3PUFVWY02PKPeZl+tRI5RPOo+Gz1hQnTFwPtE4qWRf2daKeEy6Xd8uOJHCtTbswGwJjvvVThxHCNoGIf13gOW0aEMyEVOQPVMFJ6cjTuFt8Ndj6Lfq8U3Hn7ba0/fPq1DfHd3anDoAdU8BTxxGferUckuSG1/j3MPn5nX7EZ4VG3vrb4IRpOmv5lFB3MVj/cbG5MMa38zam2lgqqAl7I3LwTBcQ== matvey@matvey-VirtualBox
