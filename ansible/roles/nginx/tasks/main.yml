@@ -20,6 +20,11 @@
 - name: start nginx handlers
   meta: flush_handlers
 
+- name: restart nginx
+  ansible.builtin.systemd_service:
+    name: nginx
+    state: restarted
+
 - name: Return service state information as fact data
   service_facts:
 
