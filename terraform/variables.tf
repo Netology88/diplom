@@ -1,16 +1,16 @@
 variable "yandex_token" {
   type    = string
-  default = "y0_AgAAAABlOJ6zAATuwQAAAAESIam7AAD3KdTLWGFIVpqpLkYgawd54lHnpQ"
+  default = "<TOKEN YA>"
 }
 
 variable "yandex_folder_id" {
   type    = string
-  default = "b1gopai77ms7chok36rl"
+  default = "<PROJEKT ID>"
 }
 
 variable "service_account_id" {
   type    = string
-  default = "aje90k5obmvdtu5i64bu"
+  default = "<SERVICE ACCOUNT>"
 }
 
 variable "image_id_ya" {
