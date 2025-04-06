@@ -8,14 +8,18 @@ terraform {
 }
 
 provider "yandex" {
-  token     = var.yandex_token
-  folder_id = var.yandex_folder_id
-  cloud_id  = "b1grcjsamoqgckpet6lo"
   zone      = "ru-central1-a"
 }
 
 data "yandex_compute_image" "ubuntu" {
   family = "ubuntu-2004-lts"
+}
+
+# ---------------Create Service Account-------------------
+
+resource "yandex_iam_service_account" "sa" {
+  name        = "diplom"
+  description = "Service account diplom"
 }
 
 # ------------------VM - Web-Server1-----------------------
